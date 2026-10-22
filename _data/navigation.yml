@@ -1,0 +1,47 @@
+main:
+  - title: Home
+    url: /
+  - title: Instructors
+    url: /instructors/
+    children:
+      - title: Sensei Robert Lashin
+        url: /instructors/sensei-robert-lashin/
+      - title: Sensei James Lashin
+        url: /instructors/sensei-jim-lashin/
+      - title: Sensei Eve McGrath
+        url: /instructors/sensei-eve-mcgrath/
+      - title: Sensei Danny Leung
+        url: /instructors/sensei-danny-leung/
+      - title: Sensei Harjas Mankoo
+        url: /instructors/sensei-harjas-mankoo/
+  - title: Dojos
+    url: /dojos/
+    children:
+      - title: Surrey Dojo
+        url: /dojos/surrey-dojo/
+      - title: Langara Dojo
+        url: /dojos/langara-dojo/
+      - title: Coquitlam Dojo
+        url: /dojos/coquitlam-dojo/
+  - title: Schedule
+    url: /class-schedule/
+  - title: Techniques
+    url: /techniques/
+    children:
+      - title: Kihon
+        url: /techniques/kihon/
+      - title: Kata
+        url: /techniques/kata/
+      - title: Kumite
+        url: /techniques/kumite/
+  - title: Links
+    url: /links/
+  - title: Events/News
+    url: /news/
+    children:
+      - title: Newsletters/Glossary
+        url: /news/newsletters/
+  - title: Photos/Videos
+    url: /photos/
+  - title: Contact Us
+    url: /contact-us/
