@@ -10,7 +10,7 @@ permalink: /photos/
   <h2>ISKF National Championship</h2>
   <div class="photo-gallery" aria-label="ISKF National Championship photos">
     {% assign national_photos = "1,2,3,4,5,6,7,9,8,10,11,12" | split: "," %}
-    {% for photo in national_photos %}{% assign image = '/assets/mirror/photos/natiskf/pic' | append: photo | append: '.jpeg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="ISKF National Championship photo {{ photo }}" loading="lazy"></a>{% endfor %}
+    {% for photo in national_photos %}{% assign image = '/assets/images/photos/natiskf/pic' | append: photo | append: '.jpeg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="ISKF National Championship photo {{ photo }}" loading="lazy"></a>{% endfor %}
   </div>
 
   <div class="video-list">
@@ -26,7 +26,7 @@ permalink: /photos/
   <h2>Langara YMCA dojo</h2>
   <p>The Langara dojo’s final class of 2022.</p>
   <div class="photo-gallery photo-gallery--centered" aria-label="Langara dojo class photo">
-    {% assign image = '/assets/mirror/photos/2022/dskdojo-classphoto-dec12-2022.jpg' | relative_url %}
+    {% assign image = '/assets/images/photos/2022/dskdojo-classphoto-dec12-2022.jpg' | relative_url %}
     <a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Langara dojo class photo, December 2022" loading="lazy"></a>
   </div>
 </section>
@@ -36,7 +36,7 @@ permalink: /photos/
   <h2>Canadian Nationals · Nova Scotia</h2>
   <div class="photo-gallery" aria-label="2013 Canadian Nationals photos in Nova Scotia">
     {% assign nova_scotia_photos = "293810_10151646565226416_334417549_n,984089_10151646575241416_1391284793_n,248116_10151646517476416_1667264287_n,182943_10151646411201416_2068468032_n,253305_10151646545406416_1528326245_n,264485_10151646550186416_1591175304_n,316270_10151646549836416_450211085_n,581730_10151646549371416_396077510_n,943713_10151646549311416_1552906437_n,970709_10151646549121416_1430615903_n,485431_10151646544596416_49969522_n,417842_10151646565021416_530383582_n,600778_10151646393196416_1864187426_n,600837_10151646394041416_127241291_n" | split: "," %}
-    {% for photo in nova_scotia_photos %}{% assign image = '/assets/mirror/wp-content/uploads/2012/04/' | append: photo | append: '-300x225.jpg' | relative_url %}{% assign full_image = '/assets/mirror/wp-content/uploads/2012/04/' | append: photo | append: '.jpg' | relative_url %}<a href="{{ full_image }}" data-lightbox-item><img src="{{ image }}" alt="2013 Canadian Nationals, Nova Scotia — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
+    {% for photo in nova_scotia_photos %}{% assign image = '/assets/images/photos/gallery/' | append: photo | append: '-300x225.jpg' | relative_url %}{% assign full_image = '/assets/images/photos/gallery/' | append: photo | append: '.jpg' | relative_url %}<a href="{{ full_image }}" data-lightbox-item><img src="{{ image }}" alt="2013 Canadian Nationals, Nova Scotia — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
   </div>
 </section>
 
@@ -45,7 +45,7 @@ permalink: /photos/
   <h2>ISKF Provincial Tournament</h2>
   <div class="photo-gallery" aria-label="2013 ISKF Provincial Tournament photos">
     {% assign provincial_photos = "3002_10151576291256416_1322907745_n,19030_10151576597616416_459685003_n,19220_10151576260466416_1128554379_n,45636_10151576293706416_685534238_n,62676_10151576286146416_1620194609_n,77102_10151576590966416_1355448388_n,149262_10151576283921416_1366955139_n,522413_10151576295716416_1936822768_n,523538_10151601938692323_151647594_n,527241_10151576284131416_564355371_n,537200_10151576272711416_772869173_n,548506_10151576296041416_1714497568_n,555755_10151576294616416_179718178_n,559996_10151576291381416_1343807948_n" | split: "," %}
-    {% for photo in provincial_photos %}{% assign dimensions = "300x225" %}{% if photo contains "523538" %}{% assign dimensions = "300x168" %}{% endif %}{% assign image = '/assets/mirror/wp-content/uploads/2012/04/' | append: photo | append: '-' | append: dimensions | append: '.jpg' | relative_url %}{% assign full_image = '/assets/mirror/wp-content/uploads/2012/04/' | append: photo | append: '.jpg' | relative_url %}<a href="{{ full_image }}" data-lightbox-item><img src="{{ image }}" alt="2013 ISKF Provincial Tournament — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
+    {% for photo in provincial_photos %}{% assign dimensions = "300x225" %}{% if photo contains "523538" %}{% assign dimensions = "300x168" %}{% endif %}{% assign image = '/assets/images/photos/gallery/' | append: photo | append: '-' | append: dimensions | append: '.jpg' | relative_url %}{% assign full_image = '/assets/images/photos/gallery/' | append: photo | append: '.jpg' | relative_url %}<a href="{{ full_image }}" data-lightbox-item><img src="{{ image }}" alt="2013 ISKF Provincial Tournament — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
   </div>
 </section>
 
@@ -54,7 +54,7 @@ permalink: /photos/
   <h2>ISKF World Shoto Cup</h2>
   <div class="photo-gallery" aria-label="2012 ISKF World Shoto Cup photos">
     {% assign shoto_photos = "56732_10152311878680104_1774998496_o:300x225,6951_10152323101435104_1943988285_n:300x173,204829_10152311880230104_1325245289_o:300x225,257720_10152311898895104_1915850535_o:300x225,331141_10152311881865104_1333568389_o:300x225,474371_10152311884045104_1565513841_o:300x225,565265_10152308539115104_312997802_n:300x169,566071_10152308542155104_33791064_n:235x300,566398_10152308501435104_1310654803_n:300x187" | split: "," %}
-    {% for item in shoto_photos %}{% assign photo = item | split: ":" %}{% assign image = '/assets/mirror/wp-content/uploads/2012/04/' | append: photo[0] | append: '-' | append: photo[1] | append: '.jpg' | relative_url %}{% assign full_image = '/assets/mirror/wp-content/uploads/2012/04/' | append: photo[0] | append: '.jpg' | relative_url %}<a href="{{ full_image }}" data-lightbox-item><img src="{{ image }}" alt="2012 ISKF World Shoto Cup — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
+    {% for item in shoto_photos %}{% assign photo = item | split: ":" %}{% assign image = '/assets/images/photos/gallery/' | append: photo[0] | append: '-' | append: photo[1] | append: '.jpg' | relative_url %}{% assign full_image = '/assets/images/photos/gallery/' | append: photo[0] | append: '.jpg' | relative_url %}<a href="{{ full_image }}" data-lightbox-item><img src="{{ image }}" alt="2012 ISKF World Shoto Cup — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
   </div>
 </section>
 
@@ -62,9 +62,9 @@ permalink: /photos/
   <p class="schedule-kicker">Championship · 2012</p>
   <h2>Canadian ISKF Nationals · Olympic Oval</h2>
   <div class="photo-gallery" aria-label="2012 Canadian ISKF Nationals at the Olympic Oval">
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/05/576310_10151707091900104_717020103_24172376_1338411689_n3-300x224.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Canadian ISKF Nationals at the Olympic Oval, photo 1" loading="lazy"></a>
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/04/2012-nationals-in-BC-0663-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Canadian ISKF Nationals, photo 2" loading="lazy"></a>
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/04/2012-nationals-in-BC-0623-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Canadian ISKF Nationals, photo 3" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/576310_10151707091900104_717020103_24172376_1338411689_n3-300x224.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Canadian ISKF Nationals at the Olympic Oval, photo 1" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/2012-nationals-in-BC-0663-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Canadian ISKF Nationals, photo 2" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/2012-nationals-in-BC-0623-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Canadian ISKF Nationals, photo 3" loading="lazy"></a>
   </div>
 </section>
 
@@ -72,7 +72,7 @@ permalink: /photos/
   <p class="schedule-kicker">Dojo life</p>
   <h2>Surrey YMCA Dojo</h2>
   <div class="photo-gallery photo-gallery--centered" aria-label="Surrey YMCA dojo photo">
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/04/fun-0533-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Surrey YMCA dojo" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/fun-0533-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Surrey YMCA dojo" loading="lazy"></a>
   </div>
 </section>
 
@@ -80,8 +80,8 @@ permalink: /photos/
   <p class="schedule-kicker">Club gathering · 2012</p>
   <h2>After the Canadian ISKF Nationals</h2>
   <div class="photo-gallery" aria-label="Party after the 2012 Canadian ISKF Nationals">
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/04/2012-nationals-in-BC-07532-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Celebration after the 2012 Canadian ISKF Nationals, photo 1" loading="lazy"></a>
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/04/2012-nationals-in-BC-0744-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Celebration after the 2012 Canadian ISKF Nationals, photo 2" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/2012-nationals-in-BC-07532-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Celebration after the 2012 Canadian ISKF Nationals, photo 1" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/2012-nationals-in-BC-0744-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Celebration after the 2012 Canadian ISKF Nationals, photo 2" loading="lazy"></a>
   </div>
 </section>
 
@@ -90,8 +90,8 @@ permalink: /photos/
   <h2>Master Yaguchi Seminar · Vernon</h2>
   <p>Vernon Japanese Hall · July 5–8, 2012</p>
   <div class="photo-gallery" aria-label="Master Yaguchi seminar in Vernon">
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/04/330809_10151097783566823_850567569_o1-300x199.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Master Yaguchi seminar in Vernon, photo 1" loading="lazy"></a>
-    {% assign image = '/assets/mirror/wp-content/uploads/2012/04/photo2-300x171.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Master Yaguchi seminar in Vernon, photo 2" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/330809_10151097783566823_850567569_o1-300x199.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Master Yaguchi seminar in Vernon, photo 1" loading="lazy"></a>
+    {% assign image = '/assets/images/photos/gallery/photo2-300x171.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="Master Yaguchi seminar in Vernon, photo 2" loading="lazy"></a>
   </div>
 </section>
 
@@ -101,7 +101,7 @@ permalink: /photos/
   <p>August 3–5, 2012</p>
   <div class="photo-gallery" aria-label="2012 Denver ISKF Camp photos">
     {% assign denver_photos = "DSC051653,DSC051673,DSC051683,DSC051693" | split: "," %}
-    {% for photo in denver_photos %}{% assign image = '/assets/mirror/wp-content/uploads/2012/04/' | append: photo | append: '-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Denver ISKF Camp — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
+    {% for photo in denver_photos %}{% assign image = '/assets/images/photos/gallery/' | append: photo | append: '-300x225.jpg' | relative_url %}<a href="{{ image }}" data-lightbox-item><img src="{{ image }}" alt="2012 Denver ISKF Camp — photo {{ forloop.index }}" loading="lazy"></a>{% endfor %}
   </div>
 </section>
 

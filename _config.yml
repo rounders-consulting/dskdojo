@@ -59,10 +59,3 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# Leftover pages saved from the old WordPress site. Nothing links to them and
-# their links are broken, so keep them out of the published site.
-exclude:
-  - assets/images/photos/index.html
-  - assets/images/photos/*/index.html
-  - assets/mirror/**/*.html
