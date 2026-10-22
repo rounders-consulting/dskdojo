@@ -69,13 +69,13 @@
             <p class="home-section-kicker">Continue exploring</p>
             <div class="page-next-steps-grid">
               {% unless page.url contains '/class-schedule/' %}
-                <a href="/class-schedule/"><strong>Find a class</strong><span>See current class times and enrollment links →</span></a>
+                <a href="{{ '/class-schedule/' | relative_url }}"><strong>Find a class</strong><span>See current class times and enrollment links →</span></a>
               {% endunless %}
               {% unless page.url contains '/dojos/' %}
-                <a href="/dojos/"><strong>Choose a dojo</strong><span>Explore Surrey, Langara, and Coquitlam locations →</span></a>
+                <a href="{{ '/dojos/' | relative_url }}"><strong>Choose a dojo</strong><span>Explore Surrey, Langara, and Coquitlam locations →</span></a>
               {% endunless %}
               {% unless page.url contains '/contact-us/' %}
-                <a href="/contact-us/"><strong>Questions?</strong><span>Contact the club and find local dojo details →</span></a>
+                <a href="{{ '/contact-us/' | relative_url }}"><strong>Questions?</strong><span>Contact the club and find local dojo details →</span></a>
               {% endunless %}
             </div>
           </div>

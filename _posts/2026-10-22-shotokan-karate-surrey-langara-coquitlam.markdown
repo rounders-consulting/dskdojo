@@ -30,4 +30,4 @@ description: "Learn how to choose the right Shotokan Karate class in Surrey, Lan
 
 <p>Whether you are searching for <strong>kids karate Surrey</strong>, <strong>adult karate Vancouver</strong>, or <strong>traditional Shotokan classes in the Lower Mainland</strong>, Downtown Shotokan Karate can help you find a dojo that matches your experience level and schedule.</p>
 
-<p>Visit our <a href="/class-schedule/">class schedule</a> to explore current training times and choose the location that works best for you.</p>
+<p>Visit our <a href="{{ '/class-schedule/' | relative_url }}">class schedule</a> to explore current training times and choose the location that works best for you.</p>
