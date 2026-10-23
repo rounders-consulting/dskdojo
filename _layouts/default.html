@@ -6,11 +6,11 @@
     <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
     <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="canonical" href="{{ page.canonical_url | default: page.url | absolute_url }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page.title | default: site.title }} | {{ site.title }}">
     <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:url" content="{{ page.canonical_url | default: page.url | absolute_url }}">
     <meta property="og:site_name" content="Downtown Shotokan Karate">
     <meta property="og:locale" content="en_CA">
     <meta name="twitter:card" content="summary_large_image">
@@ -28,7 +28,7 @@
         "@id": "{{ site.url }}/#organization",
         "name": "Downtown Shotokan Karate",
         "description": "Traditional Shotokan Karate classes in Surrey, Vancouver Langara, and Coquitlam, British Columbia.",
-        "url": "https://www.dskdojo.com/",
+        "url": "{{ site.url }}/",
         "sport": "Karate",
         "areaServed": ["Surrey, BC", "Vancouver, BC", "Coquitlam, BC"],
         "sameAs": [
@@ -51,8 +51,8 @@
       {% include site-header.html %}
 
       <main class="site-shell">
-        <div class="main-column{% if page.url == '/' %} home-main-column{% endif %}">
-          {% if page.title and page.url != '/' and page.layout != 'post' %}
+        <div class="main-column{% if page.home %} home-main-column{% endif %}">
+          {% if page.title and page.home != true and page.layout != 'post' %}
             <header class="entry-header">
               <h1 class="entry-title">{{ page.title }}</h1>
             </header>
@@ -63,7 +63,7 @@
         </div>
       </main>
 
-      {% unless page.url == '/' or page.url == '/404.html' %}
+      {% unless page.home or page.url == '/404.html' %}
         <nav class="page-next-steps" aria-label="Explore Downtown Shotokan Karate">
           <div class="page-next-steps-inner">
             <p class="home-section-kicker">Continue exploring</p>
